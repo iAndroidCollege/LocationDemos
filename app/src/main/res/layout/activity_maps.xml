@@ -11,13 +11,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:id="@+id/firstLayout"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#0dd">
-        </RelativeLayout>
+       <android.support.v4.view.ViewPager
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:id="@+id/galleryPager"/>
 
         <RelativeLayout
             android:id="@+id/mapLayout"
@@ -34,6 +32,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_map_24dp"
         app:backgroundTint="#fff"
-        app:layout_anchor="@+id/firstLayout"
+        app:layout_anchor="@+id/galleryPager"
         app:layout_anchorGravity="bottom|right|end"/>
 </android.support.design.widget.CoordinatorLayout>
